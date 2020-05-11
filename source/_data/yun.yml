@@ -84,6 +84,21 @@ menu:
     path: https://yun.yunyoujun.cn
     icon: icon-settings-line
 
+#侧边栏 tags
+tags:
+  Vue: "#4fc08d"
+  Hexo: "#0E834D"
+  CSS: "#5298d1"
+  Node.js: "#026E00"
+  Git: "#F14E32"
+  React: "#61dafb"
+  Python: "#3776ab"
+  PHP: "#8892BF"
+  VS Code: "#0066B8"
+  JavaScript: "#F4DF4F"
+  TypeScript: "#317AC6"
+  Laravel: "#F4645F"
+
 #页面链接（在 sidebar 的最下方，添加醒目的图标链接。）
 pages:
   - name: 我的小伙伴们
@@ -139,3 +154,8 @@ symbols_count_time:
   item_text_total: true
   awl: 2
   wpm: 250
+
+# 播放器设置
+aplayer:
+  global: true
+  meting: true
