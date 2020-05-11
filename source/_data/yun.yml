@@ -1,0 +1,141 @@
+#首页--标语动画
+banner:
+  enable: true
+  title: 谨腻子的小破站
+  src: /js/ui/banner.js
+  cloud: true
+  go_down:
+    enable: true
+    icon: icon-arrow-down-s-line
+
+#社交图标
+#name: 链接名称
+#link: 链接
+#icon: 图标 Class
+#color: 图标颜色（前提是您引入的图标支持 SVG 自定义颜色）当前默认色彩采用官方图标的品牌主色。
+social:
+  - name: QQ
+    # https://isux.tencent.com/wp-content/uploads/2016/05/20160512101222609.pdf
+    link: http://wpa.qq.com/msgrd?v=3&uin=1942595064&site=qq&menu=yes
+    icon: icon-qq-line
+    color: "#12B7F5"
+  - name: GitHub
+    link: https://github.com/liu1942595064
+    icon: icon-github-line
+    color: "#181717"
+  - name: E-Mail
+    link: mailto:1942595064@qq.com
+    icon: icon-mail-line
+    color: "#8E71C1"
+  - name: 微博
+    link: https://weibo.com/u/5532647501?is_all=1
+    icon: icon-weibo-line
+    color: "#E6162D"
+  - name: 豆瓣
+    link: https://www.douban.com/people/195152866/
+    icon: icon-douban-line
+    color: "#007722"
+  - name: 网易云音乐
+    link: https://music.163.com/#/user/home?id=1501167268
+    icon: icon-netease-cloud-music-line
+    color: "#C10D0C"
+  - name: 知乎
+    link: https://www.zhihu.com/people/jin-ni-zi-32
+    icon: icon-zhihu-line
+    color: "#0084FF"
+  - name: 哔哩哔哩动画
+    link: https://space.bilibili.com/381939062
+    icon: icon-bilibili-line
+    color: "#FF8EB3"
+  - name: Twitter
+    link: https://twitter.com/9KJUmeIjabZkBrY
+    icon: icon-twitter-line
+    color: "#1da1f2"
+
+#侧边栏头像
+avatar:
+  enable: true
+  url: /images/avatar.jpg
+  rounded: true
+  opacity: 1
+  mickey_mouse: false
+
+#侧边栏-导航 （设置导航对应图标及链接）
+#主页
+#归档
+#标签
+#分类
+#自定义（你可以设置为任意图标及链接，当你未设置自定义图标链接时，它将自动变为文档导航按钮以保持整体的对称）
+menu:
+  home:
+    path: /
+    icon: icon-home-4-line
+  archives:
+    path: /archives
+    icon: icon-archive-line
+  tags:
+    path: /tags
+    icon: icon-price-tag-3-line
+  categories:
+    path: /categories
+    icon: icon-folder-2-line
+  custom:
+    title: 文档
+    path: https://yun.yunyoujun.cn
+    icon: icon-settings-line
+
+#页面链接（在 sidebar 的最下方，添加醒目的图标链接。）
+pages:
+  - name: 我的小伙伴们
+    url: /links/
+    icon: icon-genderless-line
+    color: dodgerblue
+
+#开启后，将在每篇文章或页面末尾显示打赏按钮。
+reward_settings:
+  enable: true
+  icon: icon-hand-coin-line
+  comment: 我很可爱，请给我钱
+  # url: https://github.com/YunYouJun/yunyoujun.github.io/issues/96
+
+#打赏二维码
+reward:
+  - name: 支付宝
+    path: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/donate/alipay-qrcode.jpg
+    color: "#00A3EE"
+    icon: icon-alipay-line
+  - name: QQ 支付
+    path: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/donate/qqpay-qrcode.png
+    color: "#12B7F5"
+    icon: icon-qq-line
+  - name: 微信支付
+    path: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/donate/wechatpay-qrcode.jpg
+    color: "#2DC100"
+    icon: icon-wechat-pay-line
+
+#---------------页脚---------------------
+
+#起始年份
+#图标
+#驱动（开启后自豪地显示当前使用的博客框架 Hexo 与主题 Yun 的名字及版本。）
+#博客运行时间（默认关闭）
+footer:
+  since: 2020
+  icon:
+    name: icon-cloud-line
+    animated: true
+    color: "#0078E7"
+  powered:
+    enable: false
+  live_time:
+    enable: false
+    prefix: 本博客已萌萌哒地运行
+    suffix: (●'◡'●)
+    start_time: "2019-04-12T00:00:00"
+
+# 字数统计
+symbols_count_time:
+  item_text_post: true
+  item_text_total: true
+  awl: 2
+  wpm: 250

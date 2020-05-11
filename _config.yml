@@ -102,3 +102,10 @@ deploy:
   repo: https://github.com/liu1942595064/liu1942595064.github.io.git
   branch: master
   message: Update Hexo Static Content
+
+# 字数统计
+symbols_count_time:
+  symbols: true
+  time: true
+  total_symbols: true
+  total_time: true
