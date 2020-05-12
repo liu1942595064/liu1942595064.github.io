@@ -84,9 +84,9 @@ menu:
     path: /categories
     icon: icon-folder-2-line
   custom:
-    title: 文档
-    path: https://yun.yunyoujun.cn
-    icon: icon-settings-line
+    title: 留言板
+    path: /about/#comment
+    icon: icon-clipboard-line
 
 #侧边栏 tags
 tags:
@@ -189,6 +189,31 @@ valine:
   # https://github.com/DesertsP/Valine-Admin
   # https://valine.yunyoujun.cn
   placeholder: 大佬求指教&nbsp_(:з」∠)_ （填写邮箱可以收到回复通知～）
-  visitor: true
+  #visitor: true
   recordIP: true
   enableQQ: true
+
+# 文章末尾提示
+comment:
+  enable: true
+  tips:
+    - 若您想评论，可直接在下方匿名评论。
+    - 评论规则：NickName为填写你评论时的名称、E-Mail为你的邮箱、Website为你的网站链接。
+    - 祝您使用愉快。
+
+# github留言板
+github_issues:
+  enable: false
+  username: liu1942595064
+  repository: liu1942595064.github.io
+  filters: is:issue
+
+# 网站访问计数
+busuanzi:
+  enable: ture
+  site_uv: true
+  site_uv_icon: icon-user-line
+  site_pv: true
+  site_pv_icon: icon-eye-line
+  page_pv: true
+  page_pv_icon: icon-eye-line
