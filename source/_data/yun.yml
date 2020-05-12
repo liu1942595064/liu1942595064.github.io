@@ -147,10 +147,10 @@ footer:
   powered:
     enable: false
   live_time:
-    enable: false
+    enable: true
     prefix: 本博客已萌萌哒地运行
     suffix: (●'◡'●)
-    start_time: "2019-04-12T00:00:00"
+    start_time: "2020-05-13T00:00:00"
 
 # 字数统计
 symbols_count_time:

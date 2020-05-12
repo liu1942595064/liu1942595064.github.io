@@ -7,13 +7,6 @@ description: 云游的小伙伴们
 comments: true
 random: true
 links:
-  - url: https://yunyoujun.cn
-    avatar: https://cdn.jsdelivr.net/gh/YunYouJun/yunyoujun.github.io/images/avatar.jpg
-    name: 云游君
-    blog: 云游君的小站
-    desc: All at sea.
-    color: "#0078e7" # 代表色
-    email: # 非必须
   - url: https://www.cnkirito.moe/
     avatar: https://www.cnkirito.moe/css/images/avatar.png
     name: 徐靖峰
