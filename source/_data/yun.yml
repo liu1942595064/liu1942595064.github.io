@@ -116,7 +116,7 @@ reward_settings:
 #打赏二维码
 reward:
   - name: 支付宝
-    path: https://cdn.jsdelivr.net/gh/liu1942595064/cdn@master/cdn/imgs/shoukuan/alipay-qrcode.jpg
+    path: https://cdn.jsdelivr.net/gh/liu1942595064/cdn@master/cdn/imgs/shoukuan/ali-qrcode.jpg
     color: "#00A3EE"
     icon: icon-alipay-line
   - name: QQ 支付
