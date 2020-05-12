@@ -159,27 +159,8 @@ symbols_count_time:
   awl: 2
   wpm: 250
 
-# 播放器设置
-aplayer:
-  global: true
-  meting: true
-  widget:
-    enable: true
-    option:
-      id: 308168565
-      server: netease
-      type: playlist
-      autoplay: false
-      # theme: "#2980b9"
-      loop: all
-      order: list
-      preload: auto
-      volume: 0.7
-      mutex: true
-      lrctype: 0
-      listfolded: false
-      listmaxheight: 340px
-      storagename: metingjs
+# 全局播放器设置
+
 
 # 留言板
 valine:

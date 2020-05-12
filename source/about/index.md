@@ -5,6 +5,7 @@ tags:
     - 关于我
 categories:
   - 谨腻子的小安利
+aplayer: true
 ---
 
 
