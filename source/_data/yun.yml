@@ -163,5 +163,32 @@ symbols_count_time:
 aplayer:
   global: true
   meting: true
+  widget:
+    enable: true
+    option:
+      id: 308168565
+      server: netease
+      type: playlist
+      autoplay: false
+      # theme: "#2980b9"
+      loop: all
+      order: list
+      preload: auto
+      volume: 0.7
+      mutex: true
+      lrctype: 0
+      listfolded: false
+      listmaxheight: 340px
+      storagename: metingjs
 
-# github 账号登录
+# 留言板
+valine:
+  enable: true
+  appId: wm0p6yc2TqJaUPmJsUjlkSJ1-gzGzoHsz # your leancloud application appid
+  appKey: vOHLUjYF1DU9O7QyzO1uyhOq # your leancloud application appkey
+  # https://github.com/DesertsP/Valine-Admin
+  # https://valine.yunyoujun.cn
+  placeholder: 大佬求指教&nbsp_(:з」∠)_ （填写邮箱可以收到回复通知～）
+  visitor: true
+  recordIP: true
+  enableQQ: true

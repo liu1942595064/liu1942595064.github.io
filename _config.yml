@@ -117,3 +117,7 @@ aplayer:
   meting: true
   meting_cdn: https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js
   asset_inject: false
+
+# pjax全局音乐播放插件
+pjax:
+  enable: true
