@@ -198,3 +198,6 @@ busuanzi:
   site_pv_icon: icon-eye-line
   page_pv: true
   page_pv_icon: icon-eye-line
+
+# 设置网站图标
+favicon: /favicon.ico
