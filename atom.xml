@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://liu1942595064.github.io/"/>
-  <updated>2020-05-14T06:24:09.203Z</updated>
+  <updated>2020-05-14T12:04:40.030Z</updated>
   <id>https://liu1942595064.github.io/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>看过的电影，读过的书</title>
+    <link href="https://liu1942595064.github.io/2020/05/14/filmbook/"/>
+    <id>https://liu1942595064.github.io/2020/05/14/filmbook/</id>
+    <published>2020-05-14T11:49:00.000Z</published>
+    <updated>2020-05-14T12:04:40.030Z</updated>
+    
+    <content type="html"><![CDATA[    <div id="aplayer-lSRmOkBE" class="aplayer aplayer-tag-marker meting-tag-marker"         data-id="2235097256" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#C20C0C"    ></div><blockquote><h3 id="看过的电影"><a href="#看过的电影" class="headerlink" title="看过的电影"></a>看过的电影</h3></blockquote><ul><li>少年斯派维的奇异旅行</li></ul><blockquote><h3 id="读过的书"><a href="#读过的书" class="headerlink" title="读过的书"></a>读过的书</h3></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        
+    &lt;div id=&quot;aplayer-lSRmOkBE&quot; class=&quot;aplayer aplayer-tag-marker meting-tag-marker&quot;
+         data-id=&quot;2235097256&quot; data-server=&quot;netease&quot; dat
+      
+    
+    </summary>
+    
+    
+      <category term="电影、书" scheme="https://liu1942595064.github.io/categories/%E7%94%B5%E5%BD%B1%E3%80%81%E4%B9%A6/"/>
+    
+    
+      <category term="看过的电影" scheme="https://liu1942595064.github.io/tags/%E7%9C%8B%E8%BF%87%E7%9A%84%E7%94%B5%E5%BD%B1/"/>
+    
+      <category term="读过的书" scheme="https://liu1942595064.github.io/tags/%E8%AF%BB%E8%BF%87%E7%9A%84%E4%B9%A6/"/>
+    
+  </entry>
   
   <entry>
     <title>HTML、CSS快速学习</title>
