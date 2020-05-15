@@ -1,5 +1,5 @@
 ---
-title: HTML、CSS快速学习
+title: 【一】HTML、CSS快速学习（简化路径）
 date: 2020-05-14 10:39:10
 tags:
   - html常用快速学习

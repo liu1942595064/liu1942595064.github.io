@@ -120,7 +120,7 @@ aplayer:
 
 # pjax全局音乐播放插件
 pjax:
-  enable: true
+  enable: false
 
 # 临时解决长篇文章后半部分不能显示
 server:
