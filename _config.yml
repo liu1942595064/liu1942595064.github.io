@@ -13,7 +13,7 @@ timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://jinnizi.gitee.io
+url: https://liu1942595064.github.io
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -99,7 +99,7 @@ theme: yun
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://gitee.com/JinNiZi/JinNiZi.git
+  repo: https://github.com/liu1942595064/liu1942595064.github.io.git
   branch: master
   message: Update Hexo Static Content
 
