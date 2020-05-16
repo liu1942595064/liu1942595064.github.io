@@ -45,7 +45,7 @@ post_asset_folder: false
 relative_link: false
 future: true
 highlight:
-  enable: true
+  enable: false
   line_number: true
   auto_detect: false
   tab_replace: ''
@@ -125,3 +125,10 @@ pjax:
 # 临时解决长篇文章后半部分不能显示
 server:
   compress: true
+
+# 解决markdown代码块手机上溢出问题
+prism_plugin:
+  mode: preprocess
+  theme: default
+  line_number: false # default false
+  # custom_css: "path/to/your/custom.css" # optional
