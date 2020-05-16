@@ -4,9 +4,8 @@ date: 2020-05-16 15:34:36
 tags:
   - node.js安装
   - vue安装
-categores:
-  - node.js
-  - vue
+categories:
+  - 前端快速学习
 description: node.js 和 vue的安装教程
 ---
 > ###### 写给接下来需要学vue的小伙伴
@@ -74,11 +73,11 @@ vue -V (在此注意V为大写)
 4、注意：
 项目建立过程中，有如下选择，选择NO。（该选项为使用ESLint规范你的代码，一个空格错误都将报错，不开启，避免不必要的麻烦）。
 后两项为单元测试，可以选择No.
-![](//files.jb51.net/file_images/article/201705/2017051714072413.png)
+![](https://cdn.jsdelivr.net/gh/liu1942595064/cdn@master/cdn/imgs/shoukuan/vuear.png)
 
 
 5、项目建立完成后，目录结构如下：
-![](//files.jb51.net/file_images/article/201705/2017051714072414.png)
+![](https://cdn.jsdelivr.net/gh/liu1942595064/cdn@master/cdn/imgs/shoukuan/vuemlu.png)
 
 
 6、安装项目所需依赖，进入项目中：
@@ -96,7 +95,7 @@ npm install
 
 
 9、初始效果
-![](//files.jb51.net/file_images/article/201705/2017051714072517.png)
+![](https://cdn.jsdelivr.net/gh/liu1942595064/cdn@master/cdn/imgs/shoukuan/vuexiaoguo.png)
 
 
 10，退出监听，可以直接Ctrl+C，选择Y。
