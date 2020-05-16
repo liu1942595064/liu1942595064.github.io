@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://liu1942595064.github.io/"/>
-  <updated>2020-05-16T09:51:40.520Z</updated>
+  <updated>2020-05-16T09:56:54.088Z</updated>
   <id>https://liu1942595064.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://liu1942595064.github.io/2020/05/16/nodejsvue/"/>
     <id>https://liu1942595064.github.io/2020/05/16/nodejsvue/</id>
     <published>2020-05-16T07:34:36.000Z</published>
-    <updated>2020-05-16T09:51:40.520Z</updated>
+    <updated>2020-05-16T09:56:54.088Z</updated>
     
     <content type="html"><![CDATA[<blockquote><h6 id="写给接下来需要学vue的小伙伴"><a href="#写给接下来需要学vue的小伙伴" class="headerlink" title="写给接下来需要学vue的小伙伴"></a>写给接下来需要学vue的小伙伴</h6></blockquote><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>本博主也走过很多很多坑，才逐渐有了经验，如果这篇文章对你有帮助<br>请转发至需要过坑的小伙伴，本文助他飞过去。</p><hr><a id="more"></a><h3 id="安装nodejs"><a href="#安装nodejs" class="headerlink" title="安装nodejs"></a>安装nodejs</h3><p>选择对应版本，<a href="https://nodejs.org/en/download/" target="_blank" rel="noopener">https://nodejs.org/en/download/</a><br>选好安装路径，最好不要安装在c盘（就是系统盘），占系统盘空间。<br>（安装时选好路径一直选默认就行，当然不放心你也可以去问度娘（百度）或谷哥（Chrome））</p><p>cmd里查看nodejs和vue的安装版本（主要是检查是否安装正确）</p><p>安装好之后，对npm安装的全局模块所在路径以及缓存所在路径，进行环境配置。<br>是因为以后在执行类似：npm install express [-g]（后面的可选参数-g，g代表global全局安装的意思）的安装语句时，会将安装的模块安装到【C:\Users\用户名\AppData\Roaming\npm】路径中，占C盘空间。<br>例如：我希望将全模块所在路径和缓存路径放在我node.js安装的文件夹中，则在我安装的文件夹【D:\Develop\nodejs】下创建两个文件夹【node_global】及【node_cache】打开cmd输入如下命令</p><pre><code>npm config set prefix &quot;D:\Develop\nodejs\node_global&quot;npm config set cache &quot;D:\Develop\nodejs\node_cache&quot;</code></pre><p>接下来点击 我的电脑，属性，高级系统设置<br>选择高级，环境变量<br>1.新建系统变量</p><pre><code>输入NODE_PATH输入D:\Develop\nodejs;D:\Develop\nodejs\node_global\node_modules    （node安装地址跟自定义地址 用;分开）</code></pre><p>2.修改用户变量path</p><pre><code>%NODE_PATH%;D:\Develop\nodejs\node_global   (加%NODE_PATH%是为了防止 cmd找不到node报错）</code></pre><p>修改完后保存</p><hr><h3 id="使用nodejs安装vue-cli脚手架"><a href="#使用nodejs安装vue-cli脚手架" class="headerlink" title="使用nodejs安装vue-cli脚手架"></a>使用nodejs安装vue-cli脚手架</h3><p>前提：nodeJs本地已安装。<br>1、执行npm install –global vue-cli ，全局安装vue-cli<br>—-因为默认是从国外服务器下，可以使用阿里巴巴在国内的镜像服务器。<br>产生通过config命令设置默认下载路径：</p><pre><code>npm config set registry https://registry.npm.taobao.org</code></pre><p>然后再执行：</p><pre><code>npm install --global vue-cli</code></pre><p>2、安装后，检查是否安装成功<br>vue -V (在此注意V为大写)<br>3、使用vue建一个项目名叫“my-project”（vue init webpack my-project），注意项目名不能有大写。<br>—-注：vue-cli 的模板包括 webpack 和 webpack-simple,前者是比较复杂专业的项目，他的配置并不全放在根目录下的 webpack.config.js 中。<br>—-webpack-simple 相对简单的，它根目录下才有个 webpack.config.js。<br>4、注意：<br>项目建立过程中，有如下选择，选择NO。（该选项为使用ESLint规范你的代码，一个空格错误都将报错，不开启，避免不必要的麻烦）。<br>后两项为单元测试，可以选择No.<br><img src="//files.jb51.net/file_images/article/201705/2017051714072413.png" alt="" loading="lazy"></p><p>5、项目建立完成后，目录结构如下：<br><img src="//files.jb51.net/file_images/article/201705/2017051714072414.png" alt="" loading="lazy"></p><p>6、安装项目所需依赖，进入项目中：</p><pre><code>npm install</code></pre><p>完成后，会发现项目目录下多出一个node_modules文件夹，里面就是 vue-cli 创建的一个基于 webpack 的 vue.js 项目。</p><p>7、进入项目目录文件夹（my-project）中，就可以使用vue进行开发啦<br>8、使用npm run dev，便可以打开本地服务器实时查看效果（localhost:8080）<br>如果浏览器打开之后，没有加载出页面，有可能是本地的 8080 端口被占用，需要修改一下配置文件 config&gt;index.js<br>建议将端口号改为不常用的端口。另外我还将 build 的路径前缀修改为 ‘ ./ ‘（原本为 ‘ / ‘），是因为打包之后，外部引入 js 和 css 文件时，如果路径以 ‘ / ‘ 开头，在本地是无法找到对应文件的（服务器上没问题）。<br>所以如果需要在本地打开打包后的文件，就得修改文件路径。</p><p>9、初始效果<br><img src="//files.jb51.net/file_images/article/201705/2017051714072517.png" alt="" loading="lazy"></p><p>10，退出监听，可以直接Ctrl+C，选择Y。</p><blockquote><h6 id="以上就是本文全部内容，如果以上对你没有帮助，你可以自行去查阅其它对你帮助很大的文章。"><a href="#以上就是本文全部内容，如果以上对你没有帮助，你可以自行去查阅其它对你帮助很大的文章。" class="headerlink" title="以上就是本文全部内容，如果以上对你没有帮助，你可以自行去查阅其它对你帮助很大的文章。"></a>以上就是本文全部内容，如果以上对你没有帮助，你可以自行去查阅其它对你帮助很大的文章。</h6></blockquote>]]></content>
     
@@ -31,6 +31,8 @@
     
     </summary>
     
+    
+      <category term="前端快速学习" scheme="https://liu1942595064.github.io/categories/%E5%89%8D%E7%AB%AF%E5%BF%AB%E9%80%9F%E5%AD%A6%E4%B9%A0/"/>
     
     
       <category term="node.js安装" scheme="https://liu1942595064.github.io/tags/node-js%E5%AE%89%E8%A3%85/"/>
@@ -71,14 +73,14 @@
     <published>2020-05-14T11:49:00.000Z</published>
     <updated>2020-05-14T12:04:40.030Z</updated>
     
-    <content type="html"><![CDATA[    <div id="aplayer-VeAjehnd" class="aplayer aplayer-tag-marker meting-tag-marker"         data-id="2235097256" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#C20C0C"    ></div><blockquote><h3 id="看过的电影"><a href="#看过的电影" class="headerlink" title="看过的电影"></a>看过的电影</h3></blockquote><ul><li>少年斯派维的奇异旅行</li></ul><blockquote><h3 id="读过的书"><a href="#读过的书" class="headerlink" title="读过的书"></a>读过的书</h3></blockquote>]]></content>
+    <content type="html"><![CDATA[    <div id="aplayer-raNpGouT" class="aplayer aplayer-tag-marker meting-tag-marker"         data-id="2235097256" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#C20C0C"    ></div><blockquote><h3 id="看过的电影"><a href="#看过的电影" class="headerlink" title="看过的电影"></a>看过的电影</h3></blockquote><ul><li>少年斯派维的奇异旅行</li></ul><blockquote><h3 id="读过的书"><a href="#读过的书" class="headerlink" title="读过的书"></a>读过的书</h3></blockquote>]]></content>
     
     <summary type="html">
     
       
       
         
-    &lt;div id=&quot;aplayer-VeAjehnd&quot; class=&quot;aplayer aplayer-tag-marker meting-tag-marker&quot;
+    &lt;div id=&quot;aplayer-raNpGouT&quot; class=&quot;aplayer aplayer-tag-marker meting-tag-marker&quot;
          data-id=&quot;2235097256&quot; data-server=&quot;netease&quot; dat
       
     
