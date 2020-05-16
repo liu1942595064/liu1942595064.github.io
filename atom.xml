@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://liu1942595064.github.io/"/>
-  <updated>2020-05-16T09:56:54.088Z</updated>
+  <updated>2020-05-16T10:36:40.262Z</updated>
   <id>https://liu1942595064.github.io/</id>
   
   <author>
@@ -17,13 +17,36 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>PicGo踩坑解决方案</title>
+    <link href="https://liu1942595064.github.io/2020/05/16/picgocaikeng/"/>
+    <id>https://liu1942595064.github.io/2020/05/16/picgocaikeng/</id>
+    <published>2020-05-16T10:16:34.000Z</published>
+    <updated>2020-05-16T10:36:40.262Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><h6 id="为了帮助大家避免踩坑，本博主去网上查阅资料供大家参考。"><a href="#为了帮助大家避免踩坑，本博主去网上查阅资料供大家参考。" class="headerlink" title="为了帮助大家避免踩坑，本博主去网上查阅资料供大家参考。"></a>为了帮助大家避免踩坑，本博主去网上查阅资料供大家参考。</h6></blockquote><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>因为我之前自学踩了不少坑，知道有些问题解决起来非常困难<br>所以我决定把我的经验以及其它大佬的经验传授给后人，避免后人停滞不前。</p><hr><a id="more"></a><h2 id="PicGo踩坑记（上传失败，服务端出错，请重试）"><a href="#PicGo踩坑记（上传失败，服务端出错，请重试）" class="headerlink" title="PicGo踩坑记（上传失败，服务端出错，请重试）"></a>PicGo踩坑记（上传失败，服务端出错，请重试）</h2><h3 id="1-图床设置的问题"><a href="#1-图床设置的问题" class="headerlink" title="1.图床设置的问题"></a>1.图床设置的问题</h3><p>首先在确保你的GitHub图床设置路径准确无误的情况下：<br>     - 再次检查你的仓库名是否正确<br>     - 仓库名不能出现空格！！如果一定要有空格请用 - 来代替（因为GitHub中的空格默认换成-）<br>     - 不要出现一些奇怪的符号！</p><h3 id="2-上传文件的问题"><a href="#2-上传文件的问题" class="headerlink" title="2.上传文件的问题"></a>2.上传文件的问题</h3><pre><code> - 同上，文件名不要包含空格！ - 文件名不要包含奇怪的字符（加乘百分号等等）</code></pre><h3 id="3-间歇性上传失败"><a href="#3-间歇性上传失败" class="headerlink" title="3. 间歇性上传失败"></a>3. 间歇性上传失败</h3><p>这种情况是以上都没问题，并且之前成功上传过，突然就不能上传了。<br>打开PicGo的设置-设置server<br>把这个开关，开换成关，关换成开（别问为什么，问就是不知道反正有效。。）</p><h3 id="4-仍然没有解决"><a href="#4-仍然没有解决" class="headerlink" title="4.仍然没有解决"></a>4.仍然没有解决</h3><p>这种情况，咱就只能依靠玄学了<br>     - 重启应用<br>     - 重启电脑<br>     - 如果使用代理了，全局或直连试一下</p>]]></content>
+    
+    <summary type="html">
+    
+      PicGo踩坑解决方案
+    
+    </summary>
+    
+    
+      <category term="踩坑记" scheme="https://liu1942595064.github.io/categories/%E8%B8%A9%E5%9D%91%E8%AE%B0/"/>
+    
+    
+      <category term="PicGo踩坑解决" scheme="https://liu1942595064.github.io/tags/PicGo%E8%B8%A9%E5%9D%91%E8%A7%A3%E5%86%B3/"/>
+    
+  </entry>
+  
+  <entry>
     <title>【三】nodejs和vue的安装教程</title>
     <link href="https://liu1942595064.github.io/2020/05/16/nodejsvue/"/>
     <id>https://liu1942595064.github.io/2020/05/16/nodejsvue/</id>
     <published>2020-05-16T07:34:36.000Z</published>
-    <updated>2020-05-16T09:56:54.088Z</updated>
+    <updated>2020-05-16T10:44:05.218Z</updated>
     
-    <content type="html"><![CDATA[<blockquote><h6 id="写给接下来需要学vue的小伙伴"><a href="#写给接下来需要学vue的小伙伴" class="headerlink" title="写给接下来需要学vue的小伙伴"></a>写给接下来需要学vue的小伙伴</h6></blockquote><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>本博主也走过很多很多坑，才逐渐有了经验，如果这篇文章对你有帮助<br>请转发至需要过坑的小伙伴，本文助他飞过去。</p><hr><a id="more"></a><h3 id="安装nodejs"><a href="#安装nodejs" class="headerlink" title="安装nodejs"></a>安装nodejs</h3><p>选择对应版本，<a href="https://nodejs.org/en/download/" target="_blank" rel="noopener">https://nodejs.org/en/download/</a><br>选好安装路径，最好不要安装在c盘（就是系统盘），占系统盘空间。<br>（安装时选好路径一直选默认就行，当然不放心你也可以去问度娘（百度）或谷哥（Chrome））</p><p>cmd里查看nodejs和vue的安装版本（主要是检查是否安装正确）</p><p>安装好之后，对npm安装的全局模块所在路径以及缓存所在路径，进行环境配置。<br>是因为以后在执行类似：npm install express [-g]（后面的可选参数-g，g代表global全局安装的意思）的安装语句时，会将安装的模块安装到【C:\Users\用户名\AppData\Roaming\npm】路径中，占C盘空间。<br>例如：我希望将全模块所在路径和缓存路径放在我node.js安装的文件夹中，则在我安装的文件夹【D:\Develop\nodejs】下创建两个文件夹【node_global】及【node_cache】打开cmd输入如下命令</p><pre><code>npm config set prefix &quot;D:\Develop\nodejs\node_global&quot;npm config set cache &quot;D:\Develop\nodejs\node_cache&quot;</code></pre><p>接下来点击 我的电脑，属性，高级系统设置<br>选择高级，环境变量<br>1.新建系统变量</p><pre><code>输入NODE_PATH输入D:\Develop\nodejs;D:\Develop\nodejs\node_global\node_modules    （node安装地址跟自定义地址 用;分开）</code></pre><p>2.修改用户变量path</p><pre><code>%NODE_PATH%;D:\Develop\nodejs\node_global   (加%NODE_PATH%是为了防止 cmd找不到node报错）</code></pre><p>修改完后保存</p><hr><h3 id="使用nodejs安装vue-cli脚手架"><a href="#使用nodejs安装vue-cli脚手架" class="headerlink" title="使用nodejs安装vue-cli脚手架"></a>使用nodejs安装vue-cli脚手架</h3><p>前提：nodeJs本地已安装。<br>1、执行npm install –global vue-cli ，全局安装vue-cli<br>—-因为默认是从国外服务器下，可以使用阿里巴巴在国内的镜像服务器。<br>产生通过config命令设置默认下载路径：</p><pre><code>npm config set registry https://registry.npm.taobao.org</code></pre><p>然后再执行：</p><pre><code>npm install --global vue-cli</code></pre><p>2、安装后，检查是否安装成功<br>vue -V (在此注意V为大写)<br>3、使用vue建一个项目名叫“my-project”（vue init webpack my-project），注意项目名不能有大写。<br>—-注：vue-cli 的模板包括 webpack 和 webpack-simple,前者是比较复杂专业的项目，他的配置并不全放在根目录下的 webpack.config.js 中。<br>—-webpack-simple 相对简单的，它根目录下才有个 webpack.config.js。<br>4、注意：<br>项目建立过程中，有如下选择，选择NO。（该选项为使用ESLint规范你的代码，一个空格错误都将报错，不开启，避免不必要的麻烦）。<br>后两项为单元测试，可以选择No.<br><img src="//files.jb51.net/file_images/article/201705/2017051714072413.png" alt="" loading="lazy"></p><p>5、项目建立完成后，目录结构如下：<br><img src="//files.jb51.net/file_images/article/201705/2017051714072414.png" alt="" loading="lazy"></p><p>6、安装项目所需依赖，进入项目中：</p><pre><code>npm install</code></pre><p>完成后，会发现项目目录下多出一个node_modules文件夹，里面就是 vue-cli 创建的一个基于 webpack 的 vue.js 项目。</p><p>7、进入项目目录文件夹（my-project）中，就可以使用vue进行开发啦<br>8、使用npm run dev，便可以打开本地服务器实时查看效果（localhost:8080）<br>如果浏览器打开之后，没有加载出页面，有可能是本地的 8080 端口被占用，需要修改一下配置文件 config&gt;index.js<br>建议将端口号改为不常用的端口。另外我还将 build 的路径前缀修改为 ‘ ./ ‘（原本为 ‘ / ‘），是因为打包之后，外部引入 js 和 css 文件时，如果路径以 ‘ / ‘ 开头，在本地是无法找到对应文件的（服务器上没问题）。<br>所以如果需要在本地打开打包后的文件，就得修改文件路径。</p><p>9、初始效果<br><img src="//files.jb51.net/file_images/article/201705/2017051714072517.png" alt="" loading="lazy"></p><p>10，退出监听，可以直接Ctrl+C，选择Y。</p><blockquote><h6 id="以上就是本文全部内容，如果以上对你没有帮助，你可以自行去查阅其它对你帮助很大的文章。"><a href="#以上就是本文全部内容，如果以上对你没有帮助，你可以自行去查阅其它对你帮助很大的文章。" class="headerlink" title="以上就是本文全部内容，如果以上对你没有帮助，你可以自行去查阅其它对你帮助很大的文章。"></a>以上就是本文全部内容，如果以上对你没有帮助，你可以自行去查阅其它对你帮助很大的文章。</h6></blockquote>]]></content>
+    <content type="html"><![CDATA[<blockquote><h6 id="写给接下来需要学vue的小伙伴"><a href="#写给接下来需要学vue的小伙伴" class="headerlink" title="写给接下来需要学vue的小伙伴"></a>写给接下来需要学vue的小伙伴</h6></blockquote><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>本博主也走过很多很多坑，才逐渐有了经验，如果这篇文章对你有帮助<br>请转发至需要过坑的小伙伴，本文助他飞过去。</p><hr><a id="more"></a><h3 id="安装nodejs"><a href="#安装nodejs" class="headerlink" title="安装nodejs"></a>安装nodejs</h3><p>选择对应版本，<a href="https://nodejs.org/en/download/" target="_blank" rel="noopener">https://nodejs.org/en/download/</a><br>选好安装路径，最好不要安装在c盘（就是系统盘），占系统盘空间。<br>（安装时选好路径一直选默认就行，当然不放心你也可以去问度娘（百度）或谷哥（Chrome））</p><p>cmd里查看nodejs和vue的安装版本（主要是检查是否安装正确）</p><p>安装好之后，对npm安装的全局模块所在路径以及缓存所在路径，进行环境配置。<br>是因为以后在执行类似：npm install express [-g]（后面的可选参数-g，g代表global全局安装的意思）的安装语句时，会将安装的模块安装到【C:\Users\用户名\AppData\Roaming\npm】路径中，占C盘空间。<br>例如：我希望将全模块所在路径和缓存路径放在我node.js安装的文件夹中，则在我安装的文件夹【D:\Develop\nodejs】下创建两个文件夹【node_global】及【node_cache】打开cmd输入如下命令</p><pre><code>npm config set prefix &quot;D:\Develop\nodejs\node_global&quot;npm config set cache &quot;D:\Develop\nodejs\node_cache&quot;</code></pre><p>接下来点击 我的电脑，属性，高级系统设置<br>选择高级，环境变量<br>1.新建系统变量</p><pre><code>输入NODE_PATH输入D:\Develop\nodejs;D:\Develop\nodejs\node_global\node_modules    （node安装地址跟自定义地址 用;分开）</code></pre><p>2.修改用户变量path</p><pre><code>%NODE_PATH%;D:\Develop\nodejs\node_global   (加%NODE_PATH%是为了防止 cmd找不到node报错）</code></pre><p>修改完后保存</p><hr><h3 id="使用nodejs安装vue-cli脚手架"><a href="#使用nodejs安装vue-cli脚手架" class="headerlink" title="使用nodejs安装vue-cli脚手架"></a>使用nodejs安装vue-cli脚手架</h3><p>前提：nodeJs本地已安装。<br>1、执行npm install –global vue-cli ，全局安装vue-cli<br>—-因为默认是从国外服务器下，可以使用阿里巴巴在国内的镜像服务器。<br>产生通过config命令设置默认下载路径：</p><pre><code>npm config set registry https://registry.npm.taobao.org</code></pre><p>然后再执行：</p><pre><code>npm install --global vue-cli</code></pre><p>2、安装后，检查是否安装成功<br>vue -V (在此注意V为大写)<br>3、使用vue建一个项目名叫“my-project”（vue init webpack my-project），注意项目名不能有大写。<br>—-注：vue-cli 的模板包括 webpack 和 webpack-simple,前者是比较复杂专业的项目，他的配置并不全放在根目录下的 webpack.config.js 中。<br>—-webpack-simple 相对简单的，它根目录下才有个 webpack.config.js。<br>4、注意：<br>项目建立过程中，有如下选择，选择NO。（该选项为使用ESLint规范你的代码，一个空格错误都将报错，不开启，避免不必要的麻烦）。<br>后两项为单元测试，可以选择No.<br><img src="https://cdn.jsdelivr.net/gh/liu1942595064/cdn@master/cdn/imgs/shoukuan/vuear.png" alt="" loading="lazy"></p><p>5、项目建立完成后，目录结构如下：<br><img src="https://cdn.jsdelivr.net/gh/liu1942595064/cdn@master/cdn/imgs/shoukuan/vuemlu.png" alt="" loading="lazy"></p><p>6、安装项目所需依赖，进入项目中：</p><pre><code>npm install</code></pre><p>完成后，会发现项目目录下多出一个node_modules文件夹，里面就是 vue-cli 创建的一个基于 webpack 的 vue.js 项目。</p><p>7、进入项目目录文件夹（my-project）中，就可以使用vue进行开发啦<br>8、使用npm run dev，便可以打开本地服务器实时查看效果（localhost:8080）<br>如果浏览器打开之后，没有加载出页面，有可能是本地的 8080 端口被占用，需要修改一下配置文件 config&gt;index.js<br>建议将端口号改为不常用的端口。另外我还将 build 的路径前缀修改为 ‘ ./ ‘（原本为 ‘ / ‘），是因为打包之后，外部引入 js 和 css 文件时，如果路径以 ‘ / ‘ 开头，在本地是无法找到对应文件的（服务器上没问题）。<br>所以如果需要在本地打开打包后的文件，就得修改文件路径。</p><p>9、初始效果<br><img src="https://cdn.jsdelivr.net/gh/liu1942595064/cdn@master/cdn/imgs/shoukuan/vuexiaoguo.png" alt="" loading="lazy"></p><p>10，退出监听，可以直接Ctrl+C，选择Y。</p><blockquote><h6 id="以上就是本文全部内容，如果以上对你没有帮助，你可以自行去查阅其它对你帮助很大的文章。"><a href="#以上就是本文全部内容，如果以上对你没有帮助，你可以自行去查阅其它对你帮助很大的文章。" class="headerlink" title="以上就是本文全部内容，如果以上对你没有帮助，你可以自行去查阅其它对你帮助很大的文章。"></a>以上就是本文全部内容，如果以上对你没有帮助，你可以自行去查阅其它对你帮助很大的文章。</h6></blockquote>]]></content>
     
     <summary type="html">
     
@@ -73,14 +96,14 @@
     <published>2020-05-14T11:49:00.000Z</published>
     <updated>2020-05-14T12:04:40.030Z</updated>
     
-    <content type="html"><![CDATA[    <div id="aplayer-raNpGouT" class="aplayer aplayer-tag-marker meting-tag-marker"         data-id="2235097256" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#C20C0C"    ></div><blockquote><h3 id="看过的电影"><a href="#看过的电影" class="headerlink" title="看过的电影"></a>看过的电影</h3></blockquote><ul><li>少年斯派维的奇异旅行</li></ul><blockquote><h3 id="读过的书"><a href="#读过的书" class="headerlink" title="读过的书"></a>读过的书</h3></blockquote>]]></content>
+    <content type="html"><![CDATA[    <div id="aplayer-syQNOAqW" class="aplayer aplayer-tag-marker meting-tag-marker"         data-id="2235097256" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#C20C0C"    ></div><blockquote><h3 id="看过的电影"><a href="#看过的电影" class="headerlink" title="看过的电影"></a>看过的电影</h3></blockquote><ul><li>少年斯派维的奇异旅行</li></ul><blockquote><h3 id="读过的书"><a href="#读过的书" class="headerlink" title="读过的书"></a>读过的书</h3></blockquote>]]></content>
     
     <summary type="html">
     
       
       
         
-    &lt;div id=&quot;aplayer-raNpGouT&quot; class=&quot;aplayer aplayer-tag-marker meting-tag-marker&quot;
+    &lt;div id=&quot;aplayer-syQNOAqW&quot; class=&quot;aplayer aplayer-tag-marker meting-tag-marker&quot;
          data-id=&quot;2235097256&quot; data-server=&quot;netease&quot; dat
       
     
