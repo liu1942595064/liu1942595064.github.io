@@ -1,0 +1,13 @@
+- site: CHINESE COLOR
+  owner: 传统颜色
+  url: https://colors.ichuantong.cn/
+  desc: 中国传统颜色手册
+  image: 	https://static.oschina.net/uploads/logo/chinese-colors_qv32A.png
+  color: "#75878a"
+
+- site: NIPPON COLORS
+  owner: 传统颜色
+  url: https://nipponcolors.com/
+  desc: 日本传统颜色手册
+  image: 	https://nipponcolors.com/favicon.ico
+  color: "#ed5736"

@@ -1,0 +1,13 @@
+- site: Anime-Pictures
+  owner: 免费图库
+  url: https://anime-pictures.net/
+  desc: 免费的动漫图片和壁纸
+  image: https://cdn.jsdelivr.net/gh/amehime/shoka@7ecacad/webstack/logo/anime-pictures.png
+  color: "#44cef6"
+
+- site: Tsundora
+  owner: 高画质
+  url: https://tsundora.com/
+  desc: 高解析度-高画质
+  image: https://cdn.jsdelivr.net/gh/amehime/shoka@7ecacad/webstack/logo/tsundora.png
+  color: "#e9546b"

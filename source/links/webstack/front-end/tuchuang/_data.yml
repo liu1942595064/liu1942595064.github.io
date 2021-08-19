@@ -1,0 +1,6 @@
+- site: KIENG图床
+  owner: KIENG
+  url: https://image.kieng.cn/qq.html
+  desc: 集全部免费图床与一身，缺点是上传后不能删除。
+  image: https://image.kieng.cn/logo.png
+  color: "#161823"
