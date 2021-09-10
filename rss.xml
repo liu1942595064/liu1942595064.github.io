@@ -8,7 +8,7 @@
         <author>
           <name>Cyonitsu</name>
         </author>
-        <description>谨腻子的思维 &amp; 编程笔记 —— 决定人生的是你对待学习的态度</description>
+        <description>谨腻子的思维 &amp; 编程笔记 —— 悲观的乐观主义，才是强者的态度！</description>
         <language>zh-CN</language>
         <pubDate>Sat, 06 Mar 2021 06:15:21 +0800</pubDate>
         <lastBuildDate>Sat, 06 Mar 2021 06:15:21 +0800</lastBuildDate>
@@ -19,7 +19,7 @@
         <category term="谨腻子的博客" />
         <item>
             <guid isPermalink="true">http://jonayze.top/2021/03/06/computer-science/java/course-1/3_%E5%B8%B8%E9%87%8F%E4%B8%8E%E5%8F%98%E9%87%8F/</guid>
-            <title>3：常量与变量</title>
+            <title>3：Java常量与变量</title>
             <link>http://jonayze.top/2021/03/06/computer-science/java/course-1/3_%E5%B8%B8%E9%87%8F%E4%B8%8E%E5%8F%98%E9%87%8F/</link>
             <category term="计算机科学" scheme="http://jonayze.top/categories/computer-science/" />
             <category term="Java" scheme="http://jonayze.top/categories/computer-science/java/" />
@@ -127,14 +127,15 @@
 &lt;li&gt;long&lt;/li&gt;
 &lt;/ol&gt;
 &lt;blockquote&gt;
-&lt;p&gt;举例：&lt;/p&gt;
-&lt;p&gt;byte a = 1;&lt;/p&gt;
+&lt;p&gt;举例：&lt;br /&gt;
+int a = 1;&lt;br /&gt;
+byte b = a;&lt;/p&gt;
 &lt;p&gt;1----&amp;gt;  32bit （ int ）&lt;/p&gt;
 &lt;p&gt;00000000 00000000 00000000 00000001&lt;/p&gt;
 &lt;p&gt;8 位一组&lt;/p&gt;
-&lt;p&gt;a----&amp;gt;  8bit&lt;/p&gt;
+&lt;p&gt;b----&amp;gt;  8bit&lt;/p&gt;
 &lt;p&gt;00000001&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;为什么 32bit 的 1 能转到 8bit 的 a ？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;为什么 32bit 的 1 能转到 8bit 的 b ？&lt;/strong&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;因为 = 赋值的时候做了一个自动的决定 自动类型转化 。&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -192,7 +193,7 @@
         </item>
         <item>
             <guid isPermalink="true">http://jonayze.top/2021/03/05/computer-science/java/course-1/2_%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</guid>
-            <title>2：数据类型</title>
+            <title>2：Java数据类型</title>
             <link>http://jonayze.top/2021/03/05/computer-science/java/course-1/2_%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</link>
             <category term="计算机科学" scheme="http://jonayze.top/categories/computer-science/" />
             <category term="Java" scheme="http://jonayze.top/categories/computer-science/java/" />
