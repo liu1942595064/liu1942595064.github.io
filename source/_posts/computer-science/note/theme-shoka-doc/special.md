@@ -5,7 +5,6 @@ categories:
 - [计算机科学, 二进制杂谈, Theme Shoka Documentation]
 tags:
 - Hexo
-- 教程
 math: true
 mermaid: true
 quiz: true
@@ -59,9 +58,9 @@ valine:
   image: https://cdn.jsdelivr.net/gh/amehime/shoka@latest/images/avatar.jpg
   color: "#e9546b"
 
-- site: 優萌初華
-  owner: 霜月琉璃
-  url: https://shoka.lostyu.me
+- site: 书谨华腻
+  owner: 谨腻子
+  url: https://jonayze.top
   image: images/avatar.jpg
 
 - site: 優萌初華
@@ -79,9 +78,9 @@ valine:
   image: https://cdn.jsdelivr.net/gh/amehime/shoka@latest/images/avatar.jpg
   color: "#e9546b"
 
-- site: 優萌初華
-  owner: 霜月琉璃
-  url: https://shoka.lostyu.me
+- site: 书谨华腻
+  owner: 谨腻子
+  url: https://jonayze.top
   image: images/avatar.jpg
 
 - site: 優萌初華

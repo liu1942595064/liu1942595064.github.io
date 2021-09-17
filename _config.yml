@@ -5,9 +5,9 @@
 # Site
 title: 书谨华腻
 subtitle: '在我的心底，写给明天的信'
-description: '谨腻子的生活 & 编程笔记'
+description: '谨腻子的思维 & 编程笔记 —— 悲观的乐观主义，才是强者的态度！'
 keywords: 书谨华腻,谨腻子,Jonayze,jonayze,谨腻子的博客
-author: じよにつ
+author: Cyonitsu
 language: zh-CN
 timezone: 'Asia/Shanghai'
 
@@ -69,13 +69,17 @@ index_generator:
 default_category: uncategorized
 category_map:
   计算机科学: computer-science
+
   Java: java
   C++: cpp
   二进制杂谈: note
 
   计算机程序设计（C++）-西安交通大学: course-1
-  零基础学Java语言-浙江大学-翁恺: course-1
-  面向对象程序设计-Java语言-浙江大学-翁恺: course-2
+  零基础学Java语言: course-1
+  面向对象程序设计: course-2
+
+
+  思维实验室: thinking-laboratory
 
 
   
@@ -116,7 +120,7 @@ deploy:
   type: git
   repo: https://github.com/liu1942595064/liu1942595064.github.io
   branch: master
-  message: 博客迁移
+  message: 修复或更改
 
 markdown:
   render: # 渲染器设置
@@ -206,3 +210,8 @@ feed:
         enable: true
         template: "themes/shoka/layout/_alternate/json.ejs"
         output: "feed.json"
+
+server:
+  port: 4001
+  compress: true
+  header: true

@@ -27,9 +27,12 @@
     "hexo-server": "^2.0.0",
     "hexo-symbols-count-time": "^0.7.1",
     "hexo-theme-landscape": "^0.0.3",
-    "js-yaml": "^3.14.1"
+    "js-yaml": "^3.14.1",
+    "puppeteer-cn": "^0.1.8",
+    "puppeteer-core": "^10.2.0"
   },
   "devDependencies": {
-    "hexo-feed": "^1.1.0"
+    "hexo-feed": "^1.1.0",
+    "puppeteer": "^10.2.0"
   }
 }
